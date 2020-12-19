@@ -31,8 +31,8 @@ To train a classifier we extract several features that capture different types o
   - ```slang```  is a percentage of the non-literary words in the lyrics. The non-slang words are detected using NLTK library (Bird et al. 2009).
 Natural Language Processing with Python.  O'Reilly Media Inc.]
   - ```ne_ratio``` captures the emount of named entities (including names, places, etc.) extracted by SpaCy NER Tagger
-  - ```type_token``` is ...
-  - ```ngram_ratio``` is .... where <img src="https://render.githubusercontent.com/render/math?math=n \leq 3">
+  - ```type_token``` is a measure of unique words in vocabulary of song writers. It is counted as (unique_tokens)/(all_tokens) 
+  - ```ngram_ratio``` is a measure of unique ngrams in song writers' vocabulary where <img src="https://render.githubusercontent.com/render/math?math=n \leq 3">
   - ```pronouns_first_to_second``` is ...
   - ```pronouns_self_to_nonself``` is ...
   - ```NOUN```, ```VERB```, ```ADJ```, ```PRON``` show the percentage of nouns, verbs, adjectives and pronouns present
